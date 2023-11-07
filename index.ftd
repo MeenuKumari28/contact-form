@@ -1,3 +1,695 @@
--- ds.page: Contact Form
+-- ds.page:
+full-width: true
+sidebar: false
+
+-- ds.h1: Contact 1
+
+-- contact-1:
+cta-text: Send
+cta-link: /
+
+-- ds.h1: Contact 2
+
+-- contact-2:
+cta-text: Send
+cta-link: /
+
+-- ds.h1: Contact 3
+
+-- contact-3:
+cta-text: Send
+cta-link: /
+
+-- ds.h1: Contact 4
 
 -- end: ds.page
+
+
+
+
+
+
+
+
+
+
+-- component contact-1:
+string cta-text:
+string cta-link:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- ftd.column:
+width.fixed.px: 840
+align-self: center
+height: fill-container
+spacing.fixed.px: 24
+background.image: $assets.files.assets.map.png
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+opacity: 0.9
+anchor: parent
+z-index: 1
+background.solid: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding.px: 64
+z-index: 5
+spacing.fixed.px: 24
+
+-- ftd.text: Contact Us
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 32
+
+-- ftd.column:
+spacing.fixed.px: 32
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Name
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: NAME
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Email
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+type: email
+
+-- ftd.text: EMAIL
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Company
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: COMPANY
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+margin-top.px: 24
+
+-- ftd.column:
+width.fixed.px: 350 
+height.fixed.px: 200
+border-color: $inherited.colors.border
+border-width.px: 1
+
+-- ftd.text-input:
+placeholder: Your message
+padding.px: 8
+color: $inherited.colors.text-strong
+background.solid: transparent
+
+-- end: ftd.column
+
+-- ftd.text: MESSAGE
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.text: $contact-1.cta-text
+link: $contact-1.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-self: center
+height: fill-container
+background.image: $assets.files.assets.map.png
+
+-- ftd.column:
+width: fill-container
+height: fill-container
+opacity: 0.9
+anchor: parent
+z-index: 1
+background.solid: #000000
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-bottom.px: 16
+z-index: 5
+spacing.fixed.px: 64
+
+-- ftd.text: Contact Us
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Name
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: NAME
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Email
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+type: email
+
+-- ftd.text: EMAIL
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Company
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: COMPANY
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+margin-top.px: 24
+
+-- ftd.column:
+width.fixed.px: 350 
+height.fixed.px: 200
+border-color: $inherited.colors.border
+border-width.px: 1
+
+-- ftd.text-input:
+placeholder: Your message
+padding.px: 8
+color: $inherited.colors.text-strong
+background.solid: transparent
+
+-- end: ftd.column
+
+-- ftd.text: MESSAGE
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.text: $contact-1.cta-text
+link: $contact-1.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: contact-1
+
+
+
+
+
+
+
+
+
+
+-- component contact-2:
+string cta-text:
+string cta-link:
+optional boolean $toggle: false
+
+-- ftd.column:
+width.fixed.px: 840
+width if { ftd.device == "mobile" }: fill-container
+align-self: center
+min-height.fixed.px: 240
+border-radius.px: 24
+padding.px: 24
+background.solid: $inherited.colors.background.step-1
+height if { contact-2.toggle }: fill-container
+align-content: center
+spacing.fixed.px: 32
+
+-- ftd.text: CONTACT US
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+
+-- ftd.text:
+role: $inherited.types.copy-large
+color: $inherited.colors.text
+
+Send us an email or start a conversation by filling out the form. Thank You!
+
+-- ftd.image:
+src: $assets.files.assets.toggle-down.svg
+src if { contact-2.toggle }: $assets.files.assets.toggle-up.svg
+width.fixed.px: 64
+$on-click$: $ftd.toggle($a = $contact-2.toggle)
+
+-- ftd.column:
+if: { contact-2.toggle }
+width: fill-container
+background.solid: $inherited.colors.background.step-2
+border-radius.px: 18
+padding.px: 24
+spacing.fixed.px: 24
+align-content: center
+
+-- ftd.text-input:
+placeholder: Name
+padding-vertical.px: 16
+padding-horizontal.px: 12
+width.fixed.px: 500
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
+border-width.px: 2
+border-radius.px: 24
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text-input:
+placeholder: Email
+padding-vertical.px: 16
+padding-horizontal.px: 12
+width.fixed.px: 500
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
+border-width.px: 2
+border-radius.px: 24
+border-color: $inherited.colors.border
+background.solid: transparent
+type: email
+
+-- ftd.text-input:
+placeholder: Company
+padding-vertical.px: 16
+padding-horizontal.px: 12
+width.fixed.px: 500
+width if { ftd.device == "mobile" }: fill-container
+color: $inherited.colors.text-strong
+border-width.px: 2
+border-radius.px: 24
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.column:
+width.fixed.px: 500 
+width if { ftd.device == "mobile" }: fill-container
+height.fixed.px: 300
+border-color: $inherited.colors.border
+border-width.px: 2
+border-radius.px: 8
+
+-- ftd.text-input:
+placeholder: Your message
+padding.px: 16
+color: $inherited.colors.text-strong
+background.solid: transparent
+
+-- end: ftd.column
+
+-- ftd.text: $contact-2.cta-text
+link: $contact-2.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact-2
+
+
+
+
+
+
+
+
+
+
+
+-- component contact-3:
+string cta-text:
+string cta-link:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- ftd.column:
+width.fixed.px: 1040
+padding.px: 24
+align-self: center
+height: fill-container
+spacing.fixed.px: 24
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 104
+
+-- ftd.image: 
+src: $assets.files.assets.contact.png
+width.fixed.px: 345
+align-self: center
+
+-- ftd.column:
+padding-top.px: 24
+spacing.fixed.px: 32
+
+-- ftd.text: CONTACT US
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+style: underline
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Name
+padding-vertical.px: 8
+width.fixed.px: 480
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: NAME
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Email
+padding-vertical.px: 8
+width.fixed.px: 480
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+type: email
+
+-- ftd.text: EMAIL
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Company
+padding-vertical.px: 8
+width.fixed.px: 480
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: COMPANY
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+margin-top.px: 24
+
+-- ftd.column:
+width.fixed.px: 480 
+height.fixed.px: 200
+border-color: $inherited.colors.border
+border-width.px: 1
+
+-- ftd.text-input:
+placeholder: Your message
+padding.px: 8
+width.fixed.px: 480
+height.fixed.px: 200
+color: $inherited.colors.text-strong
+background.solid: transparent
+multiline: true
+
+-- end: ftd.column
+
+-- ftd.text: MESSAGE
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.text: $contact-3.cta-text
+link: $contact-3.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-self: center
+height: fill-container
+padding-bottom.px: 16
+spacing.fixed.px: 32
+
+-- ftd.image: 
+src: $assets.files.assets.contact.png
+width.fixed.px: 250
+align-self: center
+
+-- ftd.text: Contact Us
+role: $inherited.types.heading-hero
+color: $inherited.colors.text-strong
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Name
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: NAME
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Email
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+type: email
+
+-- ftd.text: EMAIL
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text-input:
+placeholder: Company
+padding-vertical.px: 8
+width.fixed.px: 324
+color: $inherited.colors.text-strong
+border-bottom-width.px: 2
+border-color: $inherited.colors.border
+background.solid: transparent
+
+-- ftd.text: COMPANY
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 8
+margin-top.px: 24
+
+-- ftd.column:
+width.fixed.px: 350 
+height.fixed.px: 200
+border-color: $inherited.colors.border
+border-width.px: 1
+
+-- ftd.text-input:
+placeholder: Your message
+padding.px: 8
+color: $inherited.colors.text-strong
+background.solid: transparent
+
+-- end: ftd.column
+
+-- ftd.text: MESSAGE
+role: $inherited.types.copy-small
+color: $inherited.colors.text-strong
+
+-- end: ftd.column
+
+-- ftd.text: $contact-3.cta-text
+link: $contact-3.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: contact-3
