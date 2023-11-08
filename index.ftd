@@ -22,6 +22,49 @@ cta-link: /
 
 -- ds.h1: Contact 4
 
+-- contact-4:
+address: SoHo 94 Broadway St New York, NY 1001
+phone: 1234567890
+fax: 1-256-564-8956
+email: hello@email.com
+cta-text: Send
+cta-link: /
+
+-- ds.h1: contact-5
+
+-- contact-5: Contact Us
+company: ABC Pvt. Ltd.
+address: Somewhere in the universe
+email: hello@email.com
+phone: +91 2255889944
+cta-button: Contact Us
+cta-link: contact/
+facebook: $assets.files.assets.facebook.svg
+twitter: $assets.files.assets.twitter.svg
+linkedin: $assets.files.assets.instagram.svg
+instagram: $assets.files.assets.linkedin.svg
+src: https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d248849.56659254385!2d77.46612530135566!3d12.954280237295148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae1670c9b44e6d%3A0xf8dfc3e8517e4fe0!2sBengaluru%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1699424130002!5m2!1sen!2sin
+
+-- ds.h1: contact-6
+
+-- contact-6: GET IN TOUCH
+sub-title: SAY SOMETHING
+cta-text: SEND MESSAGE
+link: index.html
+
+A LEAD UX & UI DESIGNER BASED IN CANADA
+
+-- contact-info: Address 1
+info: 123 Stree New York City , United States Of America 750065.
+
+-- contact-info: Address 2
+info: 123 Stree New York City , United States Of America 750065.
+
+-- contact-info: Address 3
+info: 123 Stree New York City , United States Of America 750065.
+
+-- end: contact-6
+
 -- end: ds.page
 
 
@@ -43,9 +86,7 @@ width: fill-container
 -- ftd.desktop:
 
 -- ftd.column:
-width.fixed.px: 840
-align-self: center
-height: fill-container
+width: fill-container
 spacing.fixed.px: 24
 background.image: $assets.files.assets.map.png
 
@@ -73,6 +114,7 @@ color: $inherited.colors.text-strong
 -- ftd.row:
 width: fill-container
 spacing.fixed.px: 32
+align-content: center
 
 -- ftd.column:
 spacing.fixed.px: 32
@@ -693,3 +735,975 @@ color: $inherited.colors.cta-primary.text
 -- end: ftd.column
 
 -- end: contact-3
+
+
+
+
+
+
+
+
+
+
+
+-- component contact-4:
+optional string address:
+optional string phone:
+optional string fax:
+optional string email:
+string cta-text:
+string cta-link:
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 24
+
+-- ftd.row:
+width.fixed.px: 1040
+spacing.fixed.px: 24
+z-index: 3
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.location.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 52
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: OUR OFFICE
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.address
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+text-align: center
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.phone.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 32
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: PHONE NUMBER
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.phone
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.fax.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 32
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: FAX
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.fax
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.mail.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 32
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: EMAIL
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.email
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.column:
+width.fixed.px: 860
+min-height.fixed.px: 420
+padding-top.px: 104
+padding-bottom.px: 24
+spacing.fixed.px: 24
+background.solid: $inherited.colors.background.step-2
+margin-top.px: -64
+z-index: 1
+align-content: center
+
+-- ftd.text: CONTACT US
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text-input:
+placeholder: Enter your name
+padding.px: 16
+border-radius.px: 8
+width.fixed.px: 480
+color: $inherited.colors.text-strong
+
+-- ftd.text-input:
+placeholder: Enter your email
+padding.px: 16
+border-radius.px: 8
+width.fixed.px: 480
+color: $inherited.colors.text-strong
+type: email
+
+-- ftd.text-input:
+placeholder: Enter your message
+padding.px: 16
+border-radius.px: 8
+width.fixed.px: 480
+height.fixed.px: 200
+color: $inherited.colors.text-strong
+multiline: true
+
+-- ftd.text: $contact-4.cta-text
+link: $contact-4.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 24
+
+-- ftd.column:
+spacing.fixed.px: 24
+z-index: 3
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.location.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 52
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: OUR OFFICE
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.address
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+text-align: center
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.phone.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 32
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: PHONE NUMBER
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.phone
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.fax.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 32
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: FAX
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.fax
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width.fixed.px: 320
+height.fixed.px: 224
+align-content: center
+background.solid: $inherited.colors.background.step-1
+
+-- ftd.image:
+src: $assets.files.assets.mail.svg
+width.fixed.px: 54
+anchor: parent
+top.px: 12
+
+-- ftd.column:
+margin-top.px: 32
+padding-horizontal.px: 16
+align-content: center
+spacing.fixed.px: 18
+
+-- ftd.text: EMAIL
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text-strong
+
+-- ftd.text: $contact-4.email
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- ftd.column:
+width: fill-container
+min-height.fixed.px: 420
+padding-top.px: 64
+padding-bottom.px: 24
+spacing.fixed.px: 24
+background.solid: $inherited.colors.background.step-2
+margin-top.px: -24
+z-index: 1
+padding-horizontal.px: 16
+align-content: center
+
+-- ftd.text: CONTACT US
+role: $inherited.types.heading-large
+color: $inherited.colors.text-strong
+
+-- ftd.text-input:
+placeholder: Enter your name
+padding.px: 16
+border-radius.px: 8
+width: fill-container
+color: $inherited.colors.text-strong
+
+-- ftd.text-input:
+placeholder: Enter your email
+padding.px: 16
+border-radius.px: 8
+width: fill-container
+color: $inherited.colors.text-strong
+type: email
+
+-- ftd.text-input:
+placeholder: Enter your message
+padding.px: 16
+border-radius.px: 8
+width: fill-container
+height.fixed.px: 200
+color: $inherited.colors.text-strong
+multiline: true
+
+-- ftd.text: $contact-4.cta-text
+link: $contact-4.cta-link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: contact-4
+
+
+
+
+
+
+
+
+
+
+-- component contact-5:
+caption title:
+optional string company:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+string src: 
+
+-- ftd.column:
+width: fill-container
+
+-- ftd.desktop:
+
+-- contact-5-desktop: $contact-5.title
+address: $contact-5.address
+email: $contact-5.email
+phone: $contact-5.phone
+cta-button: $contact-5.cta-button
+cta-link: $contact-5.cta-link
+facebook: $contact-5.facebook
+twitter: $contact-5.twitter
+instagram: $contact-5.instagram
+linkedin: $contact-5.linkedin
+company: $contact-5.company
+src: $contact-5.src
+
+-- end: ftd.desktop
+
+-- ftd.mobile:
+
+-- contact-5-mobile: $contact-5.title
+address: $contact-5.address
+email: $contact-5.email
+phone: $contact-5.phone
+cta-button: $contact-5.cta-button
+cta-link: $contact-5.cta-link
+facebook: $contact-5.facebook
+twitter: $contact-5.twitter
+instagram: $contact-5.instagram
+linkedin: $contact-5.linkedin
+company: $contact-5.company
+src: $contact-5.src
+
+-- end: ftd.mobile
+
+-- end: ftd.column
+
+-- end: contact-5
+
+
+
+
+
+
+
+
+
+
+-- component contact-5-desktop:
+caption title:
+optional string company:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+string src:
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 32
+align-content: center
+
+-- ftd.column:
+width.fixed.px: 400
+height.fixed.px: 444
+padding-horizontal.px: 18
+padding-vertical.px: 18
+background.solid: $inherited.colors.accent.primary
+;;shadow: $shadow
+spacing: space-between
+border-radius.px: 8
+
+-- ftd.column:
+spacing.fixed.px: 24
+
+-- ftd.text: Contact Info
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.address.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.column:
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+style: bold
+
+$contact-5-desktop.company
+
+-- ftd.text:
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+$contact-5-desktop.address
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.email.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-5-desktop.email
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.call.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-5-desktop.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $contact-5-desktop.facebook
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- ftd.image:
+src: $contact-5-desktop.twitter
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- ftd.image:
+src: $contact-5-desktop.instagram
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- ftd.image:
+src: $contact-5-desktop.linkedin
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.iframe:
+src: $contact-5-desktop.src
+height.fixed.px: 420
+width.fixed.px: 750
+margin-bottom.px: 24
+border-radius.px: 8
+
+-- end: ftd.row
+
+-- end: contact-5-desktop
+
+
+
+
+
+
+
+
+
+
+-- component contact-5-mobile:
+caption title:
+optional string company:
+optional string address:
+optional string email:
+optional string phone:
+optional string cta-button:
+optional string cta-link:
+boolean $is-active: false
+optional ftd.image-src facebook:
+optional ftd.image-src twitter:
+optional ftd.image-src instagram:
+optional ftd.image-src linkedin:
+string src: 
+
+-- ftd.column:
+margin-top.px: 24
+width: fill-container
+
+-- ftd.column:
+width: fill-container
+padding-horizontal.px: 18
+padding-top.px: 18
+padding-bottom.px: 32
+background.solid: $inherited.colors.accent.primary
+z-index: 10
+;;shadow: $shadow
+spacing: space-between
+align-self: center
+border-radius.px: 8
+
+-- ftd.column:
+width: fill-container
+spacing.fixed.px: 24
+
+-- ftd.text: Contact Info
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.row:
+margin-top.px: 24
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.address.svg
+width.fixed.px: 26
+height.fixed.px: 30
+
+-- ftd.column:
+
+-- ftd.text: 
+role: $inherited.types.copy-regular
+color: $inherited.colors.text-strong
+style: bold
+
+$contact-5-mobile.company
+
+-- ftd.text: 
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+$contact-5-mobile.address
+
+-- end: ftd.column 
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.email.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-5-mobile.email
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+
+-- ftd.image:
+src: $assets.files.assets.call.svg
+width.fixed.px: 26
+height.fixed.px: 26
+
+-- ftd.text: $contact-5-mobile.phone
+role: $inherited.types.fine-print
+color: $inherited.colors.text-strong
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.row:
+spacing.fixed.px: 16
+align-content: center
+margin-top.px: 64
+
+-- ftd.image:
+src: $contact-5-mobile.facebook
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- ftd.image:
+src: $contact-5-mobile.twitter
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- ftd.image:
+src: $contact-5-mobile.instagram
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- ftd.image:
+src: $contact-5-mobile.linkedin
+width.fixed.px: 32
+height.fixed.px: 32
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- ftd.iframe:
+src: $contact-5-mobile.src
+height.fixed.px: 420
+width: fill-container
+margin-vertical.px: 24
+border-radius.px: 8
+
+-- end: ftd.column
+
+-- end: contact-5-mobile
+
+
+
+
+
+
+
+
+
+
+
+-- component contact-6:
+caption title:
+string sub-title:
+body body:
+string cta-text:
+string link: index.html
+boolean $is-active: false
+children child:
+
+-- ftd.column:
+width: fill-container
+align-content: center
+padding-vertical.px: 64
+
+-- ftd.column:
+width: fill-container
+max-width.fixed.px: 1140
+
+-- ftd.text: $contact-6.title
+role: $inherited.types.heading-medium
+color: $inherited.colors.text-strong
+style: bold
+
+-- ftd.column:
+width.fixed.px: 100
+height.fixed.px: 2
+background.solid: $inherited.colors.border
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 15
+
+-- end: ftd.column
+
+-- ftd.text:
+role: $inherited.types.copy-regular
+color: $inherited.colors.text
+margin-top.px: 10
+margin-top.px if { ftd.device == "mobile" }: 25
+
+$contact-6.body
+
+-- ftd.row:
+width: fill-container
+spacing.fixed.px: 30
+margin-top.px: 50
+wrap: true
+
+-- ftd.column:
+spacing.fixed.px: 24
+
+-- ftd.text: $contact-6.sub-title
+role: $inherited.types.heading-tiny
+color: $inherited.colors.text
+style: bold
+
+-- ftd.row:
+spacing.fixed.px: 32
+wrap: true
+
+-- ftd.text-input:
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+placeholder: Name *
+padding-vertical.px: 4
+padding-horizontal.px: 8
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.text-input:
+placeholder: Email *
+padding-vertical.px: 4
+width.fixed.px: 312
+width if { ftd.device == "mobile" }: fill-container
+padding-horizontal.px: 8
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- end: ftd.row
+
+-- ftd.text-input:
+placeholder: Subject *
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+type: text
+role: $inherited.types.copy-small
+color: $inherited.colors.border
+
+-- ftd.column:
+spacing.fixed.px: 32
+width: fill-container
+margin-top.px: 16
+
+-- ftd.text-input:
+placeholder: Write Your Message Here...
+padding-vertical.px: 4
+padding-horizontal.px: 8
+width: fill-container
+type: text
+role: $inherited.types.copy-small
+border-bottom-width.px: 1
+border-color: $inherited.colors.text
+color: $inherited.colors.border
+multiline: true
+
+-- end: ftd.column
+
+-- ftd.text: $contact-6.cta-text
+link: $contact-6.link
+role: $inherited.types.button-medium
+padding-vertical.px: 12
+padding-horizontal.px: 24
+text-align: center
+background.solid: $inherited.colors.cta-primary.base
+border-radius.px: 18
+width.fixed.px: 224
+margin-top.px: 24
+color: $inherited.colors.cta-primary.text
+
+-- end: ftd.column
+
+-- ftd.column:
+spacing.fixed.px: 20
+children: $contact-6.child
+align-self: center
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: ftd.column
+
+-- end: ftd.column
+
+-- end: contact-6
+
+
+
+
+
+
+
+
+
+
+-- component contact-info:
+caption title:
+string info:
+ftd.image-src icon: $assets.files.assets.location.svg
+
+-- ftd.row:
+spacing.fixed.px: 16
+max-width.fixed.px: 360
+padding.px: 20
+border-width.px: 1
+background.solid: $inherited.colors.background.base
+
+-- ftd.image:
+background.solid: $inherited.colors.background.step-2
+color: $inherited.colors.border
+src: $contact-info.icon
+width.fixed.px: 40
+height.fixed.px: 40
+border-radius.percent: 50
+padding.px: 8
+
+-- ftd.column:
+spacing.fixed.px: 8
+
+-- ftd.text: $contact-info.title
+role: $inherited.types.label-large
+color: $inherited.colors.text
+style: bold
+
+-- ftd.text: $contact-info.info
+role: $inherited.types.label-large
+color: $inherited.colors.text
+
+-- end: ftd.column
+
+-- end: ftd.row
+
+-- end: contact-info
